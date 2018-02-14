@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <title></title>
+    
+    <style>
+        body{
+          margin-left: 15%;
+          margin-right: 15%;
+        }
+        #up {
+            /* margin-top : 3%; */
+            /* text-align: center; */
+            margin-left: 27%;
+        }
+        #square{
+          border: 1px solid black;
+          width: 500px;
+          height: 250px;
+          /* margin: auto; */
+          position: relative;
+          /* left : 27%; */
+          box-shadow:  0 0px 15px 1px red;
+        }
+        #fruit{
+          position: absolute;
+          background-color: green;
+          border: 3px solid green;
+          /* margin-left: 3px; */
+          width: 5px;
+          height: 5px;
+          /* top : 3px; */
+          box-shadow:  0 0px 15px 1px black;
+        }
+        .main{
+          position: absolute;
+          background-color: red;
+          border: 3px solid red;
+          /* margin-left: 3px; */
+          width: 5px;
+          height: 5px;
+          /* top : 3px; */
+          box-shadow:  0 0px 15px 1px black;
+
+        }
+        #result{
+          text-align: center;
+          
+        }
+        button{
+          width: 48px;
+          
+          /* text-align: center; */
+        }
+        #getTimer, #getScore{
+          margin: 8px;
+          margin-left: 20%;
+          /* text-align: center; */
+        }
+        #tail {
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: 500px;
+          height: 250px;
+        }
+    </style>
+  </head>
+  <body>
+      
+    <div id="square" >
+        <div id="tail" ></div>
+        <div id="snake" class="main"></div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <div id="result"></div>
+        <div id="fruit"></div>
+    </div>
+    <br />
+    <button id="up">up</button>
+    <button id="left">left</button>
+    <button id="right">right</button>
+    <button id="down">down</button>
+    <button id="restart">restart </button>
+
+    <div id="getTimer">Total Time: 0 Seconds</div>
+    <div id="getScore">Total score: 0 </div>
+    <div id="test" value="5"></div>
+  </body>
+  <script src="script.js"></script>
+</html>
